@@ -891,6 +891,49 @@ section {
 }
 
 /* ═══════════════════════════════
+   REDES & APOIA-SE
+═══════════════════════════════ */
+#redes-apoio {
+  background: var(--ink-soft);
+  border-top: 1px solid rgba(201,168,76,0.08);
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+}
+.redes-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+.rede-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid rgba(201,168,76,0.2);
+  background: rgba(201,168,76,0.02);
+  padding: 16px 20px;
+  transition: border-color 0.25s, background 0.25s;
+}
+.rede-link:hover {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.08);
+}
+.rede-label {
+  font-family: var(--ff-title);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.rede-url {
+  font-family: var(--ff-body);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* ═══════════════════════════════
    FOOTER
 ═══════════════════════════════ */
 footer {
@@ -1242,6 +1285,34 @@ footer {
     </div>
 
     <p class="comprar-note reveal reveal-delay-4">Publicado via Kindle Direct Publishing</p>
+  </div>
+</section>
+
+<!-- ══ REDES SOCIAIS & APOIA-SE ══ -->
+<section id="redes-apoio">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow reveal">Comunidade</span>
+      <h2 class="section-title reveal reveal-delay-1">Redes Sociais &amp; Apoia-se</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="redes-grid">
+      <a class="rede-link reveal" href="https://www.instagram.com/umaguerradoamanha/" target="_blank" rel="noopener">
+        <span class="rede-label">Instagram</span>
+        <span class="rede-url">@umaguerradoamanha</span>
+      </a>
+
+      <a class="rede-link reveal reveal-delay-1" href="https://www.youtube.com/@UmaGuerraDoAmanh%C3%A3" target="_blank" rel="noopener">
+        <span class="rede-label">YouTube</span>
+        <span class="rede-url">@UmaGuerraDoAmanhã</span>
+      </a>
+
+      <a class="rede-link reveal reveal-delay-2" href="https://www.catarse.me/" target="_blank" rel="noopener">
+        <span class="rede-label">Apoia-se (em breve)</span>
+        <span class="rede-url">Ir para página inicial do Catarse</span>
+      </a>
+    </div>
   </div>
 </section>
 
