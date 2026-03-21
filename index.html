@@ -686,8 +686,8 @@ section {
 .char-maya    .char-type, .char-maya    .char-divider { color:#6ab4f0; background:rgba(106,180,240,0.5); }
 .char-idris   .char-type, .char-idris   .char-divider { color:#8ec8f0; background:rgba(142,200,240,0.5); }
 .char-mumppe  .char-type, .char-mumppe  .char-divider { color:#f07070; background:rgba(240,112,112,0.5); }
-.char-john    .char-type, .char-john    .char-divider { color:#f09060; background:rgba(240,144,96,0.5); }
-.char-sophie  .char-type, .char-sophie  .char-divider { color:#f0c070; background:rgba(240,192,112,0.5); }
+.char-john    .char-type, .char-john    .char-divider { color:#6ab4f0; background:rgba(106,180,240,0.5); }
+.char-sophie  .char-type, .char-sophie  .char-divider { color:#6ab4f0; background:rgba(106,180,240,0.5); }
 
 /* ═══════════════════════════════
    MAPA MENTAL (iframe embed)
@@ -716,7 +716,7 @@ section {
    AUTORES
 ═══════════════════════════════ */
 #autores {
-  background: var(--ink2);
+  background: var(--ink);
 }
 #autores::before {
   content:'';
@@ -735,7 +735,7 @@ section {
 
 .autor-card {
   padding: 48px 40px;
-  background: var(--ink);
+  background: var(--ink2);
   border: 1px solid rgba(201,168,76,0.06);
   text-align: center;
   transition: border-color 0.3s;
@@ -749,7 +749,7 @@ section {
   margin: 0 auto 24px;
   border: 1px solid rgba(201,168,76,0.25);
   overflow: hidden;
-  background: var(--ink3);
+  background: var(--ink);
   display: flex; align-items: center; justify-content: center;
 }
 .autor-avatar img {
@@ -800,7 +800,7 @@ section {
    COMPRAR
 ═══════════════════════════════ */
 #comprar {
-  background: var(--ink);
+  background: var(--ink2);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -891,6 +891,49 @@ section {
 }
 
 /* ═══════════════════════════════
+   REDES & APOIA-SE
+═══════════════════════════════ */
+#redes-apoio {
+  background: var(--ink-soft);
+  border-top: 1px solid rgba(201,168,76,0.08);
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+}
+.redes-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+.rede-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid rgba(201,168,76,0.2);
+  background: rgba(201,168,76,0.02);
+  padding: 16px 20px;
+  transition: border-color 0.25s, background 0.25s;
+}
+.rede-link:hover {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.08);
+}
+.rede-label {
+  font-family: var(--ff-title);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.rede-url {
+  font-family: var(--ff-body);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* ═══════════════════════════════
    FOOTER
 ═══════════════════════════════ */
 footer {
@@ -960,7 +1003,6 @@ footer {
   <ul class="nav-links">
     <li><a href="#sinopse">Sinopse</a></li>
     <li><a href="#personagens">Personagens</a></li>
-    <li><a href="#mapa">Mapa</a></li>
     <li><a href="#autores">Autores</a></li>
     <li><a href="#comprar">Adquirir</a></li>
   </ul>
@@ -1138,6 +1180,28 @@ footer {
         <span class="char-num">04</span>
       </div>
 
+      <!-- John -->
+      <div class="char-card char-john reveal reveal-delay-1">
+        <span class="char-type">Protagonista</span>
+        <h3 class="char-name">John</h3>
+        <span class="char-role">Adolescente sob o Regime</span>
+        <div class="char-divider"></div>
+        <p class="char-desc">Jovem americano de família classe 2. Criado cantando hinos ao regime, celebrando Mumppe como herói. Não conhece o mundo fora da narrativa que lhe foi dada. Representa todas as gerações moldadas pelo poder antes que pudessem questionar.</p>
+        <p class="char-quote">"A obediência cega é o maior inimigo da liberdade." — Albert Einstein</p>
+        <span class="char-num">05</span>
+      </div>
+
+      <!-- Sophie -->
+      <div class="char-card char-sophie reveal reveal-delay-2">
+        <span class="char-type">Protagonista</span>
+        <h3 class="char-name">Sophie</h3>
+        <span class="char-role">A Soberana Substituta</span>
+        <div class="char-divider"></div>
+        <p class="char-desc">Herdou o cargo de uma antiga soberana da Casa Europeia sem ter sido eleita pelo povo. Olha para o pôr do sol e pergunta quando tudo voltará ao normal — enquanto a guerra que se aproxima não deixa resposta simples para essa pergunta.</p>
+        <p class="char-quote">"Quando disserem: Paz e segurança, então lhes sobrevirá repentina destruição."</p>
+        <span class="char-num">06</span>
+      </div>
+
       <!-- Mumppe -->
       <div class="char-card char-mumppe reveal">
         <span class="char-type">Antagonista</span>
@@ -1146,52 +1210,12 @@ footer {
         <div class="char-divider"></div>
         <p class="char-desc">Tomou o poder em 2035. Opera do Salão Oval em Washington, cercado de legiões que lhe são leais. Planeja dominação global com uma arma que pode destruir tudo. Quando seu plano vaza, ordena ataques nucleares como "demonstração de força".</p>
         <p class="char-quote">"O poder tende a corromper, e o poder absoluto corrompe absolutamente." — Lord Acton</p>
-        <span class="char-num">05</span>
-      </div>
-
-      <!-- John -->
-      <div class="char-card char-john reveal reveal-delay-1">
-        <span class="char-type">Personagem</span>
-        <h3 class="char-name">John</h3>
-        <span class="char-role">Criança sob o Regime</span>
-        <div class="char-divider"></div>
-        <p class="char-desc">Jovem americano de família classe 2. Criado cantando hinos ao regime, celebrando Mumppe como herói. Não conhece o mundo fora da narrativa que lhe foi dada. Representa todas as gerações moldadas pelo poder antes que pudessem questionar.</p>
-        <p class="char-quote">"A obediência cega é o maior inimigo da liberdade." — Albert Einstein</p>
-        <span class="char-num">06</span>
-      </div>
-
-      <!-- Sophie -->
-      <div class="char-card char-sophie reveal reveal-delay-2">
-        <span class="char-type">Personagem</span>
-        <h3 class="char-name">Sophie</h3>
-        <span class="char-role">A Soberana Substituta</span>
-        <div class="char-divider"></div>
-        <p class="char-desc">Herdou o cargo de uma antiga soberana da Casa Europeia sem ter sido eleita pelo povo. Olha para o pôr do sol e pergunta quando tudo voltará ao normal — enquanto a guerra que se aproxima não deixa resposta simples para essa pergunta.</p>
-        <p class="char-quote">"Quando disserem: Paz e segurança, então lhes sobrevirá repentina destruição."</p>
         <span class="char-num">07</span>
       </div>
 
     </div>
   </div>
 </section>
-
-
-<!-- ══ MAPA MENTAL ══ -->
-<section id="mapa" style="background:var(--ink); padding:100px 0 0; position:relative; border-top:1px solid rgba(201,168,76,0.08);">
-  <div style="max-width:1100px; margin:0 auto; padding:0 24px;">
-    <div class="section-header">
-      <span class="section-eyebrow reveal">Universo</span>
-      <h2 class="section-title reveal reveal-delay-1">Mapa Narrativo</h2>
-      <p class="reveal reveal-delay-2" style="font-family:var(--ff-accent);font-style:italic;font-size:16px;color:var(--text-dim);margin-top:16px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;">Explore os personagens, as Casas Nobres e os conflitos que constroem este universo.</p>
-      <div class="section-rule"></div>
-    </div>
-  </div>
-  <div class="reveal" style="width:100%;height:65vh;min-height:480px;border-top:1px solid rgba(201,168,76,0.1);border-bottom:1px solid rgba(201,168,76,0.1);overflow:hidden;position:relative;">
-    <iframe id="mapa-frame" src="mapa_mental_ugda.html" style="width:100%;height:100%;border:none;" loading="lazy" title="Mapa Narrativo — Uma Guerra do Amanhã"></iframe>
-    <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.2),transparent);"></div>
-  </div>
-</section>
-
 <!-- ══ AUTORES ══ -->
 <section id="autores">
   <div class="section-inner">
@@ -1261,6 +1285,34 @@ footer {
     </div>
 
     <p class="comprar-note reveal reveal-delay-4">Publicado via Kindle Direct Publishing</p>
+  </div>
+</section>
+
+<!-- ══ REDES SOCIAIS & APOIA-SE ══ -->
+<section id="redes-apoio">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow reveal">Comunidade</span>
+      <h2 class="section-title reveal reveal-delay-1">Redes Sociais &amp; Apoia-se</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="redes-grid">
+      <a class="rede-link reveal" href="https://www.instagram.com/umaguerradoamanha/" target="_blank" rel="noopener">
+        <span class="rede-label">Instagram</span>
+        <span class="rede-url">@umaguerradoamanha</span>
+      </a>
+
+      <a class="rede-link reveal reveal-delay-1" href="https://www.youtube.com/@UmaGuerraDoAmanh%C3%A3" target="_blank" rel="noopener">
+        <span class="rede-label">YouTube</span>
+        <span class="rede-url">@UmaGuerraDoAmanhã</span>
+      </a>
+
+      <a class="rede-link reveal reveal-delay-2" href="https://www.catarse.me/" target="_blank" rel="noopener">
+        <span class="rede-label">Apoia-se (em breve)</span>
+        <span class="rede-url">Ir para página inicial do Catarse</span>
+      </a>
+    </div>
   </div>
 </section>
 
