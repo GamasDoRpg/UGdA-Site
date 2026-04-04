@@ -891,6 +891,47 @@ section {
 }
 
 /* ═══════════════════════════════
+   AGRADECIMENTOS A APOIADORES
+═══════════════════════════════ */
+#agradecimentos {
+  background: var(--ink);
+  border-top: 1px solid rgba(201,168,76,0.08);
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+}
+.agradecimentos-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.apoiadores-card {
+  background: var(--ink2);
+  border: 1px solid rgba(201,168,76,0.15);
+  padding: 24px 20px;
+}
+.apoiadores-titulo {
+  font-family: var(--ff-title);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+.apoiadores-lista {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+.apoiadores-lista li {
+  font-size: 20px;
+  color: var(--text);
+  border-bottom: 1px dashed rgba(201,168,76,0.15);
+  padding-bottom: 8px;
+}
+.apoiadores-lista li:last-child { border-bottom: none; }
+
+/* ═══════════════════════════════
    REDES & APOIA-SE
 ═══════════════════════════════ */
 #redes-apoio {
@@ -986,6 +1027,7 @@ footer {
   .sinopse-grid { grid-template-columns: 1fr; gap: 48px; }
   .book-cover { max-width: 200px; }
   .autores-grid { grid-template-columns: 1fr; }
+  .agradecimentos-grid { grid-template-columns: 1fr; }
   .chars-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: clamp(36px, 10vw, 60px); }
 
@@ -1285,6 +1327,36 @@ footer {
     </div>
 
     <p class="comprar-note reveal reveal-delay-4">Publicado via Kindle Direct Publishing</p>
+  </div>
+</section>
+
+<!-- ══ AGRADECIMENTOS A APOIADORES ══ -->
+<section id="agradecimentos">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow reveal">Comunidade</span>
+      <h2 class="section-title reveal reveal-delay-1">Agradecimentos a Apoiadores</h2>
+      <p class="section-sub reveal reveal-delay-2">Separe os nomes por categoria para facilitar atualizações.</p>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="agradecimentos-grid">
+      <div class="apoiadores-card reveal">
+        <h3 class="apoiadores-titulo">Com destaque</h3>
+        <ul class="apoiadores-lista">
+          <!-- Adicione novos nomes com destaque aqui -->
+          <li>Seu Nome Aqui</li>
+        </ul>
+      </div>
+
+      <div class="apoiadores-card reveal reveal-delay-1">
+        <h3 class="apoiadores-titulo">Sem destaque</h3>
+        <ul class="apoiadores-lista">
+          <!-- Adicione novos nomes sem destaque aqui -->
+          <li>Seu Nome Aqui</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
