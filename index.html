@@ -931,6 +931,17 @@ section {
 }
 .apoiadores-lista li:last-child { border-bottom: none; }
 
+.apoiadores-card.destaque .apoiadores-lista li {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--white);
+}
+.apoiadores-card.sem-destaque .apoiadores-lista li {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-dim);
+}
+
 /* ═══════════════════════════════
    REDES & APOIA-SE
 ═══════════════════════════════ */
@@ -1336,12 +1347,11 @@ footer {
     <div class="section-header">
       <span class="section-eyebrow reveal">Comunidade</span>
       <h2 class="section-title reveal reveal-delay-1">Agradecimentos a Apoiadores</h2>
-      <p class="section-sub reveal reveal-delay-2">Separe os nomes por categoria para facilitar atualizações.</p>
       <div class="section-rule"></div>
     </div>
 
     <div class="agradecimentos-grid">
-      <div class="apoiadores-card reveal">
+      <div class="apoiadores-card destaque reveal">
         <h3 class="apoiadores-titulo">Com destaque</h3>
         <ul class="apoiadores-lista">
           <!-- Adicione novos nomes com destaque aqui -->
@@ -1349,7 +1359,7 @@ footer {
         </ul>
       </div>
 
-      <div class="apoiadores-card reveal reveal-delay-1">
+      <div class="apoiadores-card sem-destaque reveal reveal-delay-1">
         <h3 class="apoiadores-titulo">Sem destaque</h3>
         <ul class="apoiadores-lista">
           <!-- Adicione novos nomes sem destaque aqui -->
